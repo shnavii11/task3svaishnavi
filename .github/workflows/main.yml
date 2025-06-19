@@ -1,0 +1,13 @@
+name: Basic Code Analysis
+
+on: [push]
+
+jobs:
+  analyze:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v3 
+  
+    - name: Run analyzer
+      run: python analyze.py
