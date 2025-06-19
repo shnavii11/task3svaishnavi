@@ -55,17 +55,17 @@ def FINDISSUES(violated):
 def main():
     print("DEBUG: Program starting")  
     if not os.path.exists('task3'):
-        # print("ERROR: No 'task3' directory found!")
+         print("ERROR: No 'task3' directory found!")
         return
 
     for root, dirs, files in os.walk('task3'): 
-        # print(f"DEBUG: In directory {root}")  
-        # print(f"DEBUG: Found files: {files}")  
+          print(f"DEBUG: In directory {root}")  
+          print(f"DEBUG: Found files: {files}")  
 
         for file in files:
             if len(file) > 3 and file != 'code.py':
                 filepath = os.path.join(root, file)
-                # print(f"DEBUG: Checking {filepath}")
+                  print(f"DEBUG: Checking {filepath}")
 
                 violated = checkfiles(filepath)
                 risk = FINDISSUES(violated)
