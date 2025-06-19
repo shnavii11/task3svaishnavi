@@ -53,14 +53,14 @@ def FINDISSUES(violated):
         return "workss"
         
 def main():
-    print("DEBUG: Program starting")  
+    print("Program starting")  
     if not os.path.exists('src'):
-        print("ERROR: No 'an.py' directory found!")
+        #print("ERROR: No 'an.py' directory found!")
         return
 
     for root, dirs, files in os.walk('src'): 
-        print(f"DEBUG: In directory {root}")  
-        print(f"DEBUG: Found files: {files}")  
+        #print(f"DEBUG: In directory {root}")  
+        #print(f"DEBUG: Found files: {files}")  
 
         for file in files:
             if len(file) > 3 and file != 'analyze.py':
