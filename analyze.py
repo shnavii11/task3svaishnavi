@@ -52,17 +52,15 @@ def FINDISSUES(violated):
     else:
         return "workss"
         
-import os  # Ensure you have imported os
-
 def main():
     print("DEBUG: Program starting")  
     if not os.path.exists('task3'):
-          print("ERROR: No 'task3' directory found!")
+        print("ERROR: No 'task3' directory found!")
         return
 
     for root, dirs, files in os.walk('task3'): 
-          print(f"DEBUG: In directory {root}")  
-          print(f"DEBUG: Found files: {files}")  
+        print(f"DEBUG: In directory {root}")  
+        print(f"DEBUG: Found files: {files}")  
 
         for file in files:
             if len(file) > 3 and file != 'code.py':
