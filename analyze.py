@@ -1,4 +1,4 @@
-zimport os
+import os
 miswords = ['print', 'eval', 'exec']
 linelenght = 80
 
