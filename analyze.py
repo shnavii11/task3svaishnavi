@@ -1,4 +1,4 @@
-import os
+zimport os
 miswords = ['print', 'eval', 'exec']
 linelenght = 80
 
@@ -54,11 +54,11 @@ def FINDISSUES(violated):
         
 def main():
     print("DEBUG: Program starting")  
-    if not os.path.exists('task3'):
-        print("ERROR: No 'task3' directory found!")
+    if not os.path.exists('analyze.py'):
+        print("ERROR: No 'an.py' directory found!")
         return
 
-    for root, dirs, files in os.walk('task3'): 
+    for root, dirs, files in os.walk('analyze.py'): 
         print(f"DEBUG: In directory {root}")  
         print(f"DEBUG: Found files: {files}")  
 
